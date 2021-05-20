@@ -85,6 +85,7 @@ namespace Cliente
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Mensagens";
             this.Text = "Mensagens";
+            this.Load += new System.EventHandler(this.Mensagens_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 

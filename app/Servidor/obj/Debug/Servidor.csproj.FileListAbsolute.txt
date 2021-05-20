@@ -24,3 +24,12 @@ C:\Users\jpval\Dropbox\PSI\2º_SEMESTRE\PROJETOS\PSI_TS_PL\ProjetoTS\Servidor\ob
 C:\Users\jpval\Dropbox\PSI\2º_SEMESTRE\PROJETOS\PSI_TS_PL\ProjetoTS\Servidor\obj\Debug\Servidor.csproj.CopyComplete
 C:\Users\jpval\Dropbox\PSI\2º_SEMESTRE\PROJETOS\PSI_TS_PL\ProjetoTS\Servidor\obj\Debug\Servidor.exe
 C:\Users\jpval\Dropbox\PSI\2º_SEMESTRE\PROJETOS\PSI_TS_PL\ProjetoTS\Servidor\obj\Debug\Servidor.pdb
+C:\Users\jpval\Dropbox\PSI\2º_SEMESTRE\PROJETOS\PSI_TS_PL\app\Servidor\bin\Debug\Servidor.exe.config
+C:\Users\jpval\Dropbox\PSI\2º_SEMESTRE\PROJETOS\PSI_TS_PL\app\Servidor\bin\Debug\Servidor.exe
+C:\Users\jpval\Dropbox\PSI\2º_SEMESTRE\PROJETOS\PSI_TS_PL\app\Servidor\bin\Debug\Servidor.pdb
+C:\Users\jpval\Dropbox\PSI\2º_SEMESTRE\PROJETOS\PSI_TS_PL\app\Servidor\bin\Debug\ProtocolSI.dll
+C:\Users\jpval\Dropbox\PSI\2º_SEMESTRE\PROJETOS\PSI_TS_PL\app\Servidor\obj\Debug\Servidor.csprojAssemblyReference.cache
+C:\Users\jpval\Dropbox\PSI\2º_SEMESTRE\PROJETOS\PSI_TS_PL\app\Servidor\obj\Debug\Servidor.csproj.CoreCompileInputs.cache
+C:\Users\jpval\Dropbox\PSI\2º_SEMESTRE\PROJETOS\PSI_TS_PL\app\Servidor\obj\Debug\Servidor.csproj.CopyComplete
+C:\Users\jpval\Dropbox\PSI\2º_SEMESTRE\PROJETOS\PSI_TS_PL\app\Servidor\obj\Debug\Servidor.exe
+C:\Users\jpval\Dropbox\PSI\2º_SEMESTRE\PROJETOS\PSI_TS_PL\app\Servidor\obj\Debug\Servidor.pdb

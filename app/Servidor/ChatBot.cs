@@ -15,11 +15,21 @@ namespace Servidor
         public ChatBot()
         {
             this.ChatMessages = new List<string>();
-            this.ChatMessages.Add("Ola");
-            this.ChatMessages.Add("Está tudo bem.");
-            this.ChatMessages.Add("Como está o tempo?");
-            this.ChatMessages.Add("Isto e um teste");
-            this.ChatMessages.Add("Espero que gostes");
+
+            if (DateTime.Now.Hour <= 12)
+            {
+                this.ChatMessages.Add("Bom dia são: " + DateTime.Now.Hour + " Horas e " + DateTime.Now.Minute +  " Minutos");
+            }
+            if (DateTime.Now.Hour >= 12)
+            {
+                this.ChatMessages.Add("Boa tarde são: " + DateTime.Now.Hour + " Horas e " + DateTime.Now.Minute + " Minutos");
+            }
+            if (DateTime.Now.Hour >= 20)
+            { 
+                this.ChatMessages.Add("Boa noite são: " + DateTime.Now.Hour + " Horas e " + DateTime.Now.Minute +  " Minutos");
+            }
+
+
         }
 
         public string getRandomText()

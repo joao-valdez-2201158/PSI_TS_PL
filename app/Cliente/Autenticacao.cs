@@ -17,12 +17,6 @@ namespace Cliente
             InitializeComponent();
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            Registrar reg = new Registrar();
-            reg.Show();
-        }
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
             string nome = tbUtilizador.Text;
@@ -41,10 +35,7 @@ namespace Cliente
                 Close();
         }
 
-        private void tbUtilizador_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
 
         
     }

@@ -66,5 +66,10 @@ namespace Cliente
         {
 
         }
+
+        private void Mensagens_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -30,7 +30,6 @@ namespace Cliente
         private void InitializeComponent()
         {
             this.tbUtilizador = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -46,25 +45,13 @@ namespace Cliente
             this.tbUtilizador.Name = "tbUtilizador";
             this.tbUtilizador.Size = new System.Drawing.Size(175, 26);
             this.tbUtilizador.TabIndex = 1;
-            this.tbUtilizador.TextChanged += new System.EventHandler(this.tbUtilizador_TextChanged);
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(229, 198);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(133, 37);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Registar";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // btnLogin
             // 
             this.btnLogin.Location = new System.Drawing.Point(229, 140);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(133, 37);
+            this.btnLogin.Size = new System.Drawing.Size(133, 92);
             this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -120,7 +107,6 @@ namespace Cliente
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbPassword);
             this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.tbUtilizador);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -136,7 +122,6 @@ namespace Cliente
         #endregion
 
         private System.Windows.Forms.TextBox tbUtilizador;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.TextBox tbPassword;
         private System.Windows.Forms.Label label1;
