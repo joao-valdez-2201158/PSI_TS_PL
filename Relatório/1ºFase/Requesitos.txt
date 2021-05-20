@@ -1,5 +1,0 @@
-Requesitos Funcionais Implementados para TS
--\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-
-Autenticação
-Enable/ Disable com a autenticação
-Validação de Ficheiros e Mensagens
