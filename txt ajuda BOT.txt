@@ -1,0 +1,35 @@
+/*
+txt file created 20-05-2021 | 19:28:07
+*/
+
+PERGUNTAS COM RESPOSTAS AO BOT
+
+ ---------------------------------------SABER AS HORAS----------------------------------------
+|Que horas são?                                                                               |
+|que horas são?										      |
+|Que horas sao?                                                                               |
+|que horas sao?                                                                               |
+|horas?                 								      |
+|Quais as horas?                                                                              |
+|quais as horas?									      |
+ ----------------------------------------SABER A DATA-----------------------------------------
+|Data?											      |
+|data?											      |
+|Data de hoje?                                                                                |
+|data de hoje?                                                                                |
+ ---------------------------------------COMO ESTÁ O BOT---------------------------------------
+|como estas?                                                                                  |
+|Como estas?                                                                                  |
+|como estás?                                                                                  |
+|Como estás?                                                                                  |
+ ---------------------------------------COMO ANDA O BOT---------------------------------------
+|como anda?                                                                                   |
+|Como anda?                                                                                   |
+|Como andas?                                                                                  |
+|como andas?                                                                                  |
+ -------------------------------------DIZER ADEUS AO BOT--------------------------------------
+|Adeus                                                                                        |
+|adeus                                                                                        |
+|xau                                                                                          |
+|tchau                                                                                        |
+ ------------------------------------- --------------------------------------
