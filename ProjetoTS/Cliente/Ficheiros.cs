@@ -5,6 +5,8 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net;
+using System.Net.Sockets;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,8 +17,11 @@ namespace Cliente
 {
     public partial class Ficheiros : Form
     {
+        public NetworkStream NetworkStream { get; set; }
         public NetworkClient Client { get; set; }
-
+        public TcpClient tcpClient { get; set; }
+        public int Port { get; set; }
+        
         public Ficheiros()
         {
             InitializeComponent();
@@ -152,21 +157,32 @@ namespace Cliente
             }
             tbPath.Focus();
         }
+        public void SendFile()
+
+        {
+            OpenFileDialog openDialog = new OpenFileDialog();
+            openDialog.Title = "Select A File";
+            openDialog.Filter = "Text Files (*.txt)|*.txt" + "|" +
+                                "Image Files (*.png;*.jpg)|*.png;*.jpg" + "|" +
+                                "All Files (*.*)|*.*";
+            if (openDialog.ShowDialog() == DialogResult.OK)
+            {
+                this.Port = 10000;
+                string ficheiro = openDialog.FileName;
+                string doc = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                byte[] fileRead = File.ReadAllBytes(doc);
+                byte[] fileBuffer = new byte[fileRead.Length];
+                tcpClient = new TcpClient(IPAddress.Any.ToString(), this.Port);
+                NetworkStream = tcpClient.GetStream();
+                NetworkStream.Write(fileRead.ToArray(), 0, fileBuffer.GetLength(0));
+                NetworkStream.Close();
+            }
+            
+        }
 
         private void btnEnviarFicheiro_Click(object sender, EventArgs e)
         {
-            String path = tbPath.Text;
-            try
-            {
-                using (StreamReader sr = File.OpenText(path))
-                {
-                }
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro : " + ex.Message);
-            }
+            SendFile();
         }
 
         private void Ficheiros_Load(object sender, EventArgs e)

@@ -10,9 +10,6 @@ namespace Servidor
     public class ChatBot
     {
 
-        public List<string> ChatMessages { get; set; }
-
-
 
         public ChatBot()
         {

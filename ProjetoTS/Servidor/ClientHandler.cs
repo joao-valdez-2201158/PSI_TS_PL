@@ -51,6 +51,7 @@ namespace Servidor
 
                         string str = protocolSI.GetStringFromData().ToLower();
 
+                        
                         ChatBot cb = new ChatBot();
                         string rt = cb.ReadText(str);
                         byte[] bt = Encoding.UTF8.GetBytes(rt);
@@ -70,6 +71,7 @@ namespace Servidor
                 }
             }
 
+       
             // Fecho do networkStream e do cliente (TcpClient)
             networkStream.Close();
             client.Close();

@@ -104,5 +104,4 @@ C:\Users\Amado-PT\Desktop\IPL\1º ano 2º semestre\TS\PSI_TS_PL\PSI_TS_PL\Projet
 C:\Users\Amado-PT\Desktop\IPL\1º ano 2º semestre\TS\PSI_TS_PL\PSI_TS_PL\ProjetoTS\Cliente\obj\Debug\Cliente.csproj.CopyComplete
 C:\Users\Amado-PT\Desktop\IPL\1º ano 2º semestre\TS\PSI_TS_PL\PSI_TS_PL\ProjetoTS\Cliente\obj\Debug\Cliente.exe
 C:\Users\Amado-PT\Desktop\IPL\1º ano 2º semestre\TS\PSI_TS_PL\PSI_TS_PL\ProjetoTS\Cliente\obj\Debug\Cliente.pdb
-C:\Users\jpval\Dropbox\PSI\2º_SEMESTRE\PROJETOS\PSI_TS_PL\ProjetoTS\Cliente\obj\Debug\Cliente.Cripto.resources
 C:\Users\jpval\Dropbox\PSI\2º_SEMESTRE\PROJETOS\PSI_TS_PL\ProjetoTS\Cliente\obj\Debug\Cliente.csprojAssemblyReference.cache
