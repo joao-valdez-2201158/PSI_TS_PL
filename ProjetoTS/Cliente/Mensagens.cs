@@ -15,8 +15,7 @@ namespace Cliente
 {
     public partial class Mensagens : Form
     {
-        NetworkClient Client { get; set; } // variavel da classe network client. comparavel com structs em c
-
+        NetworkClient Client { get; set; } // variavel da classe network client. 
 
         public Mensagens()
         {

@@ -48,6 +48,12 @@ namespace Cliente
 
         private void Autenticacao_Load(object sender, EventArgs e)
         {
+            CriptoFile c
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -5,9 +5,11 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EI.SI;
 
 namespace Cliente
 {
@@ -18,6 +20,7 @@ namespace Cliente
         public Ficheiros()
         {
             InitializeComponent();
+
         }
         public Ficheiros(NetworkClient Client)
         {
@@ -54,6 +57,126 @@ namespace Cliente
                     //}
                 }
             }
+        }
+
+        private void btnCriarPasta_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (!Directory.Exists(tbPath.Text))
+                {
+                    Directory.CreateDirectory(tbPath.Text);
+                    MessageBox.Show("Diretorio Criado");
+                }
+                else
+                {
+                    MessageBox.Show("Diretorio nao criado");
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Diretorio nao criado" + ex.Message);
+            }
+            tbPath.Focus();
+
+        }
+
+        private void btnEliminarPasta_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (Directory.Exists(tbPath.Text))
+                {
+                    Directory.Delete(tbPath.Text);
+                    MessageBox.Show("Diretorio Excluido");
+                }
+                else
+                {
+                    MessageBox.Show("Diretorio nao existe");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Diretorio nao excluido" + ex.Message);
+
+
+            }
+            tbPath.Focus();
+
+        }
+
+        private void btnCriarFicheiro_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (!File.Exists(tbPath.Text))
+                {
+                    File.Create(tbPath.Text);
+                    MessageBox.Show("Ficheiro Criado");
+
+                }
+                else
+                {
+                    MessageBox.Show("Ficheiro ja existe!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ficheiro nao criado" + ex.Message);
+            }
+            tbPath.Focus();
+
+        }
+
+        private void btnEliminarFicheiro_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (File.Exists(tbPath.Text))
+                {
+                    File.Delete(tbPath.Text);
+                    MessageBox.Show("Ficheiro Excluido");
+                }
+                else
+                {
+                    MessageBox.Show("Ficheiro nao existe");
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Arquivo nao excluido" + ex.Message);
+            }
+            tbPath.Focus();
+        }
+
+        private void btnEnviarFicheiro_Click(object sender, EventArgs e)
+        {
+            String path = tbPath.Text;
+            try
+            {
+                using (StreamReader sr = File.OpenText(path))
+                {
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro : " + ex.Message);
+            }
+        }
+
+        private void Ficheiros_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbPath_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

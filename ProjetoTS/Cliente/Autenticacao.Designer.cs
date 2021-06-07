@@ -40,19 +40,19 @@ namespace Cliente
             // 
             // tbUtilizador
             // 
-            this.tbUtilizador.Location = new System.Drawing.Point(45, 115);
-            this.tbUtilizador.Margin = new System.Windows.Forms.Padding(2);
+            this.tbUtilizador.Location = new System.Drawing.Point(60, 142);
+            this.tbUtilizador.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbUtilizador.Multiline = true;
             this.tbUtilizador.Name = "tbUtilizador";
-            this.tbUtilizador.Size = new System.Drawing.Size(132, 22);
+            this.tbUtilizador.Size = new System.Drawing.Size(175, 26);
             this.tbUtilizador.TabIndex = 1;
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(45, 203);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLogin.Location = new System.Drawing.Point(60, 250);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(132, 23);
+            this.btnLogin.Size = new System.Drawing.Size(176, 28);
             this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -60,33 +60,32 @@ namespace Cliente
             // 
             // tbPassword
             // 
-            this.tbPassword.Location = new System.Drawing.Point(45, 162);
-            this.tbPassword.Margin = new System.Windows.Forms.Padding(2);
+            this.tbPassword.Location = new System.Drawing.Point(60, 199);
+            this.tbPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbPassword.Multiline = true;
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.PasswordChar = '*';
-            this.tbPassword.Size = new System.Drawing.Size(132, 22);
+            this.tbPassword.Size = new System.Drawing.Size(175, 26);
             this.tbPassword.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(0, 32);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(0, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(223, 31);
+            this.label1.Size = new System.Drawing.Size(297, 38);
             this.label1.TabIndex = 11;
             this.label1.Text = "Autenticacao";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(42, 139);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(56, 171);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 17);
+            this.label2.Size = new System.Drawing.Size(83, 20);
             this.label2.TabIndex = 12;
             this.label2.Text = "Password";
             // 
@@ -94,18 +93,18 @@ namespace Cliente
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(42, 92);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(56, 113);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 17);
+            this.label3.Size = new System.Drawing.Size(80, 20);
             this.label3.TabIndex = 13;
             this.label3.Text = "Utilizador";
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(45, 249);
+            this.btnCancel.Location = new System.Drawing.Point(60, 306);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(132, 23);
+            this.btnCancel.Size = new System.Drawing.Size(176, 28);
             this.btnCancel.TabIndex = 14;
             this.btnCancel.Text = "Cancelar";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -113,9 +112,9 @@ namespace Cliente
             // 
             // Autenticacao
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(222, 286);
+            this.ClientSize = new System.Drawing.Size(296, 352);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -124,7 +123,7 @@ namespace Cliente
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.tbUtilizador);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Autenticacao";
             this.RightToLeftLayout = true;
             this.ShowIcon = false;

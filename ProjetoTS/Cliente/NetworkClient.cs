@@ -39,7 +39,7 @@ namespace Cliente
         }
 
         public void SendText(string msg)
-        {        
+        {
             byte[] packet = this.ProtocolSI.Make(ProtocolSICmdType.DATA, msg);
             NetworkStream.Write(packet, 0, packet.Length);
             while (ProtocolSI.GetCmdType() != ProtocolSICmdType.ACK)
@@ -52,18 +52,17 @@ namespace Cliente
         public string ListeningText()
         {
             string data = "";
-            
+
             int bytesreaded = NetworkStream.Read(ProtocolSI.Buffer, 0, ProtocolSI.Buffer.Length);
-            if(bytesreaded > 0)
+            if (bytesreaded > 0)
             {
-                data = Encoding.UTF8.GetString(ProtocolSI.Buffer,0,bytesreaded);
-            }  
-            
+                data = Encoding.UTF8.GetString(ProtocolSI.Buffer, 0, bytesreaded);
+            }
+
 
             return data;
         }
-
-
+       
         ////Função para fechar o Client
         public bool Close()
         {
@@ -82,5 +81,6 @@ namespace Cliente
 
             return !this.Client.Connected;
         }
+
     }
 }
