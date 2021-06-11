@@ -1,0 +1,60 @@
+/*
+txt file created 20-05-2021 | 19:28:07
+*/
+
+*UTILIZADORES PARA O LOGIN*
+User: Eduardo | Password: 2202420
+User: Joao    | Password: 2201158
+User: Tiago   | Password: 2202418
+User: Nuno    | Password: professor
+
+PERGUNTAS COM RESPOSTAS DO BOT (CAPS SÃO IRRELEVANTES)
+
+ ---------------------------------------SABER AS HORAS----------------------------------------
+|que horas são?                                                                               |
+|que horas são										      |
+|que horas sao?                                                                               |
+|que horas sao                                                                                |
+|horas?                 								      |
+|horas                 								              |
+|hora?                 								              |
+|hora                 								              |
+|diz as horas?                                                                                |
+|diz-me as horas?                                                                             |
+|quais as horas?									      |
+ ----------------------------------------SABER A DATA-----------------------------------------
+|data?											      |
+|data											      |
+|data de hoje?                                                                                |
+|que dia é hoje?                                                                              |
+|qual a data                                                                                  |
+|qual a data de hoje?                                                                         |
+ ------------------------------------------SAUDAÇÃO-------------------------------------------
+|olá											      |
+|ola											      |
+|oi                                                                                           |
+|boas                                                                                         |
+ ---------------------------------------COMO ESTÁ O BOT---------------------------------------
+|como estas?                                                                                  |
+|como estás?                                                                                  |
+|como estas                                                                                   |
+|como estás                                                                                   |
+ ---------------------------------------COMO ANDA O BOT---------------------------------------
+|como anda?                                                                                   |
+|como anda                                                                                    |
+|como andas?                                                                                  |
+|como andas                                                                                   |
+ ---------------------------------------QUEM CRIOU O BOT--------------------------------------
+|quem te criou?                                                                               |
+|quem te criou                                                                                |
+ ----------------------------------------AGRADECIMENTOS---------------------------------------
+|obrigado                                                                                     |
+|ok obrigado                                                                                  |
+|muito obrigado                                                                               |
+|obg                                                                                          |
+ --------------------------------------DIZER ADEUS AO BOT-------------------------------------
+|adeus                                                                                        |
+|fica bem                                                                                     |
+|xau                                                                                          |
+|tchau                                                                                        |
+ ------------------------------------- -------------------------------------------------------
