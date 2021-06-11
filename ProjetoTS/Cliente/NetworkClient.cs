@@ -48,7 +48,16 @@ namespace Cliente
             }
 
         }
+        public void SendFile(byte[]file)
+        {
+            byte[] packet = this.ProtocolSI.Make(ProtocolSICmdType.DATA, file);
+            NetworkStream.Write(packet, 0, packet.Length);
+            while (ProtocolSI.GetCmdType() != ProtocolSICmdType.ACK)
+            {
+                NetworkStream.Read(ProtocolSI.Buffer, 0, ProtocolSI.Buffer.Length);
+            }
 
+        }
         public string ListeningText()
         {
             string data = "";

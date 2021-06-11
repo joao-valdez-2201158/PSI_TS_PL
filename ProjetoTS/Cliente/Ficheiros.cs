@@ -21,7 +21,8 @@ namespace Cliente
         public NetworkClient Client { get; set; }
         public TcpClient tcpClient { get; set; }
         public int Port { get; set; }
-        
+        public ProtocolSI ProtocolSI { get; set; }
+
         public Ficheiros()
         {
             InitializeComponent();
@@ -33,36 +34,7 @@ namespace Cliente
             InitializeComponent();
         }
 
-        private void btnEscolherFicheiro_Click(object sender, EventArgs e)
-        {
-            var fileContent = string.Empty;
-            var filePath = string.Empty;
-
-
-            using (OpenFileDialog openFileDialog = new OpenFileDialog())
-            {
-                openFileDialog.InitialDirectory = "c:\\";
-                openFileDialog.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
-                openFileDialog.FilterIndex = 2;
-                openFileDialog.RestoreDirectory = true;
-
-                if (openFileDialog.ShowDialog() == DialogResult.OK)
-                {
-                    //Get the path of specified file
-                    filePath = openFileDialog.FileName;
-
-                    MessageBox.Show(filePath, "caminho ficheiro");
-
-                    //Read the contents of the file into a stream
-                    var fileStream = openFileDialog.OpenFile();
-
-                    //using (StreamReader reader = new StreamReader(fileStream))
-                    //{
-                    //    fileContent = reader.ReadToEnd();
-                    //}
-                }
-            }
-        }
+      
 
         private void btnCriarPasta_Click(object sender, EventArgs e)
         {
@@ -157,42 +129,74 @@ namespace Cliente
             }
             tbPath.Focus();
         }
-        public void SendFile()
-
+       
+        
+        public string escolherFicheiro()
         {
-            OpenFileDialog openDialog = new OpenFileDialog();
-            openDialog.Title = "Select A File";
-            openDialog.Filter = "Text Files (*.txt)|*.txt" + "|" +
-                                "Image Files (*.png;*.jpg)|*.png;*.jpg" + "|" +
-                                "All Files (*.*)|*.*";
-            if (openDialog.ShowDialog() == DialogResult.OK)
+
+            string fileContent = string.Empty;
+            string filePath = string.Empty;
+
+
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
-                this.Port = 10000;
-                string ficheiro = openDialog.FileName;
-                string doc = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-                byte[] fileRead = File.ReadAllBytes(doc);
-                byte[] fileBuffer = new byte[fileRead.Length];
-                tcpClient = new TcpClient(IPAddress.Any.ToString(), this.Port);
-                NetworkStream = tcpClient.GetStream();
-                NetworkStream.Write(fileRead.ToArray(), 0, fileBuffer.GetLength(0));
-                NetworkStream.Close();
-            }
-            
+                openFileDialog.InitialDirectory = "c:\\";
+                openFileDialog.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+                openFileDialog.FilterIndex = 2;
+                openFileDialog.RestoreDirectory = true;
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    filePath = openFileDialog.FileName;
+
+                }
+                return filePath;
+            }  
         }
 
         private void btnEnviarFicheiro_Click(object sender, EventArgs e)
         {
-            SendFile();
+            string file = "Ficheiro recebido com exito: " + escolherFicheiro();
+            byte[] file1 = Encoding.ASCII.GetBytes(file);
+            if (this.Client != null)
+            {
+                if (this.Client.Client.Connected)
+                {
+                    this.Client.SendFile(file1);
+
+
+                    string resposta = this.Client.ListeningText();
+                    if (!string.IsNullOrEmpty(resposta))
+                    {
+                        tbPath.Text = "Ficheiro enviado";
+                        MessageBox.Show("Ficheiro enviado com exito");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Cliente nao Conectado!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Cliente nao incializado!");
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
         }
 
         private void Ficheiros_Load(object sender, EventArgs e)
         {
-
+          
         }
 
-        private void tbPath_TextChanged(object sender, EventArgs e)
+        private void btnCripto_Click(object sender, EventArgs e)
         {
-
+            Cripto cripto = new Cripto();
+            cripto.Show();
         }
     }
 }

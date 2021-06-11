@@ -30,7 +30,6 @@ namespace Cliente
         private void InitializeComponent()
         {
             this.btnEnviarFicheiro = new System.Windows.Forms.Button();
-            this.btnEscolherFicheiro = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.btnCriarFicheiro = new System.Windows.Forms.Button();
@@ -39,27 +38,18 @@ namespace Cliente
             this.tbPath = new System.Windows.Forms.TextBox();
             this.btnEliminarFicheiro = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnCripto = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnEnviarFicheiro
             // 
-            this.btnEnviarFicheiro.Location = new System.Drawing.Point(396, 296);
+            this.btnEnviarFicheiro.Location = new System.Drawing.Point(396, 205);
             this.btnEnviarFicheiro.Name = "btnEnviarFicheiro";
             this.btnEnviarFicheiro.Size = new System.Drawing.Size(134, 54);
-            this.btnEnviarFicheiro.TabIndex = 6;
+            this.btnEnviarFicheiro.TabIndex = 7;
             this.btnEnviarFicheiro.Text = "Enviar Ficheiro";
             this.btnEnviarFicheiro.UseVisualStyleBackColor = true;
             this.btnEnviarFicheiro.Click += new System.EventHandler(this.btnEnviarFicheiro_Click);
-            // 
-            // btnEscolherFicheiro
-            // 
-            this.btnEscolherFicheiro.Location = new System.Drawing.Point(396, 205);
-            this.btnEscolherFicheiro.Name = "btnEscolherFicheiro";
-            this.btnEscolherFicheiro.Size = new System.Drawing.Size(134, 54);
-            this.btnEscolherFicheiro.TabIndex = 7;
-            this.btnEscolherFicheiro.Text = "Escolher Ficheiro";
-            this.btnEscolherFicheiro.UseVisualStyleBackColor = true;
-            this.btnEscolherFicheiro.Click += new System.EventHandler(this.btnEscolherFicheiro_Click);
             // 
             // label1
             // 
@@ -116,7 +106,6 @@ namespace Cliente
             this.tbPath.Name = "tbPath";
             this.tbPath.Size = new System.Drawing.Size(447, 22);
             this.tbPath.TabIndex = 13;
-            this.tbPath.TextChanged += new System.EventHandler(this.tbPath_TextChanged);
             // 
             // btnEliminarFicheiro
             // 
@@ -136,11 +125,23 @@ namespace Cliente
             this.label2.Size = new System.Drawing.Size(0, 17);
             this.label2.TabIndex = 21;
             // 
+            // btnCripto
+            // 
+            this.btnCripto.Location = new System.Drawing.Point(396, 296);
+            this.btnCripto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCripto.Name = "btnCripto";
+            this.btnCripto.Size = new System.Drawing.Size(134, 54);
+            this.btnCripto.TabIndex = 23;
+            this.btnCripto.Text = "Criptografia";
+            this.btnCripto.UseVisualStyleBackColor = true;
+            this.btnCripto.Click += new System.EventHandler(this.btnCripto_Click);
+            // 
             // Ficheiros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(595, 397);
+            this.ClientSize = new System.Drawing.Size(586, 395);
+            this.Controls.Add(this.btnCripto);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnEliminarFicheiro);
             this.Controls.Add(this.tbPath);
@@ -149,7 +150,6 @@ namespace Cliente
             this.Controls.Add(this.btnCriarFicheiro);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnEscolherFicheiro);
             this.Controls.Add(this.btnEnviarFicheiro);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Ficheiros";
@@ -162,7 +162,6 @@ namespace Cliente
 
         #endregion
         private System.Windows.Forms.Button btnEnviarFicheiro;
-        private System.Windows.Forms.Button btnEscolherFicheiro;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnCriarFicheiro;
@@ -171,5 +170,6 @@ namespace Cliente
         private System.Windows.Forms.TextBox tbPath;
         private System.Windows.Forms.Button btnEliminarFicheiro;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnCripto;
     }
 }

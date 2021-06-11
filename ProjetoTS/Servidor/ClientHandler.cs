@@ -39,6 +39,7 @@ namespace Servidor
             {
                 int bytesRead = networkStream.Read(protocolSI.Buffer, 0, protocolSI.Buffer.Length);
                 byte[] ack;
+                byte[] file;
 
                 // "Alteração"/mudança entre a apresentação da mensagem e o fim da tranmissão.
                 switch (protocolSI.GetCmdType())
@@ -49,17 +50,15 @@ namespace Servidor
                         ack = protocolSI.Make(ProtocolSICmdType.ACK);
                         networkStream.Write(ack, 0, ack.Length);
 
-                        string str = protocolSI.GetStringFromData().ToLower();
+                  
+                   
 
-                        
                         ChatBot cb = new ChatBot();
+                        string str = protocolSI.GetStringFromData().ToLower();
                         string rt = cb.ReadText(str);
                         byte[] bt = Encoding.UTF8.GetBytes(rt);
-
                         networkStream.Write(bt, 0, bt.Length);
-                        str = "";
-                        
-                     
+                        str = "";   
 
                         break;
 

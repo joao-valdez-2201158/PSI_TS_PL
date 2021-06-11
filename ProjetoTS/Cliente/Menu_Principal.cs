@@ -62,14 +62,24 @@ namespace Cliente
 
         private void btnDesconectar_Click(object sender, EventArgs e)
         {
-            if (this.Client.Close())
+            try
             {
-                this.lbStatus.Text = "Desconectado";
+                bool client = this.Client.Close();
+                if (client)
+                {
+                    this.lbStatus.Text = "Desconectado";
+                }
+                else
+                {
+                    this.lbStatus.Text = "Conectado";
+                }
             }
-            else
+            catch (Exception ex)
             {
-                this.lbStatus.Text = "Conectado";
+
+                MessageBox.Show("Erro: " + ex);
             }
+            
         }
         private void btnChat_Click(object sender, EventArgs e)
         {
@@ -80,6 +90,7 @@ namespace Cliente
 
         private void btnFicheiros_Click(object sender, EventArgs e)
         {
+           
             Ficheiros ficheiros = new Ficheiros(this.Client);
             ficheiros.Show();
         }
@@ -96,9 +107,8 @@ namespace Cliente
             lbMenu.Text = "Caro(a) " + CadastroUtilizador.utilizadorLogado.Nome + " Seja Bem Vindo";
         }
 
-        private void lbMenu_Click(object sender, EventArgs e)
-        {
+      
 
-        }
+       
     }
 }
