@@ -58,13 +58,19 @@
       <DependentUpon>Autenticacao.cs</DependentUpon>
     </Compile>
     <Compile Include="CadastroUtilizador.cs" />
-    <Compile Include="Cripto.cs">
+    <Compile Include="CriptoFile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cripto.Designer.cs">
-      <DependentUpon>Cripto.cs</DependentUpon>
+    <Compile Include="CriptoFile.Designer.cs">
+      <DependentUpon>CriptoFile.cs</DependentUpon>
     </Compile>
     <Compile Include="Criptografia.cs" />
+    <Compile Include="CriptoMSG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CriptoMSG.Designer.cs">
+      <DependentUpon>CriptoMSG.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ficheiros.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,8 +96,11 @@
     <EmbeddedResource Include="Autenticacao.resx">
       <DependentUpon>Autenticacao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cripto.resx">
-      <DependentUpon>Cripto.cs</DependentUpon>
+    <EmbeddedResource Include="CriptoFile.resx">
+      <DependentUpon>CriptoFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CriptoMSG.resx">
+      <DependentUpon>CriptoMSG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ficheiros.resx">
       <DependentUpon>Ficheiros.cs</DependentUpon>

@@ -60,5 +60,11 @@ namespace Cliente
         {
 
         }
+
+        private void btnCriptoMSG_Click(object sender, EventArgs e)
+        {
+            CriptoMSG criptoMSG = new CriptoMSG();
+            criptoMSG.Show();
+        }
     }
 }

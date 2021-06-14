@@ -195,7 +195,7 @@ namespace Cliente
 
         private void btnCripto_Click(object sender, EventArgs e)
         {
-            Cripto cripto = new Cripto();
+            CriptoFile cripto = new CriptoFile();
             cripto.Show();
         }
     }

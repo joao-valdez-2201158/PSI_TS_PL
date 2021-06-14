@@ -5,17 +5,23 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Cliente
 {
-    class Criptografia
+   public class Criptografia
     {
        
         public static CspParameters cspp;
         public static RSACryptoServiceProvider rsa;
-
+        AesCryptoServiceProvider aesCrypt;
         private static string _encrFolder;
+        CriptoMSG cripto { get; set; }
+        public byte[] key;
+        public byte[] iv;
+
         public static string EncrFolder
+
         {
             get
             {
@@ -307,6 +313,12 @@ namespace Cliente
             }
 
             return $"Arquivo descriptografado.\n Origem: {inFile}\n Destino: {outFile}";
+      
+        
         }
+
+      
+
     }
+
 }

@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace Cliente
 {
-    public partial class Cripto : Form
+    public partial class CriptoFile : Form
     {
-        public Cripto()
+        public CriptoFile()
         {
             InitializeComponent();
 

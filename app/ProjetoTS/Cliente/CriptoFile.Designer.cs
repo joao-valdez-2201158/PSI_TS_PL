@@ -1,7 +1,7 @@
 ﻿
 namespace Cliente
 {
-    partial class Cripto
+    partial class CriptoFile
     {
         /// <summary>
         /// Required designer variable.
