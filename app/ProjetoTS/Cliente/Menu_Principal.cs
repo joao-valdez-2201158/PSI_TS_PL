@@ -17,6 +17,7 @@ namespace Cliente
     public partial class Menu_Principal : Form
     {
         NetworkClient Client { get; set; }
+        private bool autenticado { get; set; }
 
         public Menu_Principal()
         {
@@ -30,6 +31,12 @@ namespace Cliente
             autenticacao.Show();
         }
         */
+        public string lbmenu(string user) 
+        {
+            lbMenu.Text = user;
+            string str = lbMenu.Text;
+            return str;
+        }
 
         private void btnConectar_Click(object sender, EventArgs e)
         {
@@ -83,9 +90,9 @@ namespace Cliente
         }
         private void btnChat_Click(object sender, EventArgs e)
         {
-
-            Mensagens mensagens = new Mensagens(this.Client);
-            mensagens.Show();
+            Chat chat = new Chat(this.Client);
+            chat.Show();
+           
         }
 
         private void btnFicheiros_Click(object sender, EventArgs e)
@@ -97,17 +104,28 @@ namespace Cliente
 
         private void Menu_Principal_Load(object sender, EventArgs e)
         {
-            Autenticacao autenticacao = new Autenticacao();
 
-            while(CadastroUtilizador.utilizadorLogado == null){
-                autenticacao.ShowDialog();
-                Visible = false;
+            if (!this.autenticado)
+            {
+                Autenticacao auth = new Autenticacao();
+                auth.ShowDialog(this);
             }
-            Visible = true;
-            lbMenu.Text = "Caro(a) " + CadastroUtilizador.utilizadorLogado.Nome + " Seja Bem Vindo";
+            
+            
+
+        }
+        public void definirAutenticacao(bool resultado, string nome)
+        {
+            this.autenticado = resultado;
+            if(this.autenticado)
+                lbMenu.Text = "Olá " + nome + " Seja Bem Vindo";
         }
 
-      
+        
+        private void lbMenu_Click(object sender, EventArgs e)
+        {
+
+        }
 
        
     }

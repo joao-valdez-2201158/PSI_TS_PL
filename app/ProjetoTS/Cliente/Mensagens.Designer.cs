@@ -33,7 +33,6 @@ namespace Cliente
             this.btnChat = new System.Windows.Forms.Button();
             this.tb2Chat = new System.Windows.Forms.TextBox();
             this.lbChat = new System.Windows.Forms.Label();
-            this.btnCriptoMSG = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tbChat
@@ -77,22 +76,11 @@ namespace Cliente
             this.lbChat.Text = "Chat with the BOT";
             this.lbChat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnCriptoMSG
-            // 
-            this.btnCriptoMSG.Location = new System.Drawing.Point(12, 478);
-            this.btnCriptoMSG.Name = "btnCriptoMSG";
-            this.btnCriptoMSG.Size = new System.Drawing.Size(776, 46);
-            this.btnCriptoMSG.TabIndex = 8;
-            this.btnCriptoMSG.Text = "Criptografia";
-            this.btnCriptoMSG.UseVisualStyleBackColor = true;
-            this.btnCriptoMSG.Click += new System.EventHandler(this.btnCriptoMSG_Click);
-            // 
             // Mensagens
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(815, 550);
-            this.Controls.Add(this.btnCriptoMSG);
+            this.ClientSize = new System.Drawing.Size(815, 478);
             this.Controls.Add(this.lbChat);
             this.Controls.Add(this.tb2Chat);
             this.Controls.Add(this.btnChat);
@@ -112,6 +100,5 @@ namespace Cliente
         private System.Windows.Forms.Button btnChat;
         private System.Windows.Forms.TextBox tb2Chat;
         private System.Windows.Forms.Label lbChat;
-        private System.Windows.Forms.Button btnCriptoMSG;
     }
 }

@@ -47,12 +47,13 @@ namespace Cliente
             // 
             this.lbMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMenu.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lbMenu.Location = new System.Drawing.Point(5, 14);
+            this.lbMenu.Location = new System.Drawing.Point(12, 9);
             this.lbMenu.Name = "lbMenu";
-            this.lbMenu.Size = new System.Drawing.Size(665, 89);
+            this.lbMenu.Size = new System.Drawing.Size(690, 89);
             this.lbMenu.TabIndex = 1;
             this.lbMenu.Text = "Menu Principal";
             this.lbMenu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbMenu.Click += new System.EventHandler(this.lbMenu_Click);
             // 
             // btnConectar
             // 
@@ -79,7 +80,7 @@ namespace Cliente
             // lbStatus
             // 
             this.lbStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbStatus.Location = new System.Drawing.Point(227, 136);
+            this.lbStatus.Location = new System.Drawing.Point(256, 204);
             this.lbStatus.Name = "lbStatus";
             this.lbStatus.Size = new System.Drawing.Size(179, 54);
             this.lbStatus.TabIndex = 5;
@@ -88,7 +89,7 @@ namespace Cliente
             // 
             // btnChat
             // 
-            this.btnChat.Location = new System.Drawing.Point(0, 31);
+            this.btnChat.Location = new System.Drawing.Point(7, 31);
             this.btnChat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnChat.Name = "btnChat";
             this.btnChat.Size = new System.Drawing.Size(179, 54);
@@ -99,7 +100,7 @@ namespace Cliente
             // 
             // btnFicheiros
             // 
-            this.btnFicheiros.Location = new System.Drawing.Point(0, 18);
+            this.btnFicheiros.Location = new System.Drawing.Point(7, 18);
             this.btnFicheiros.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnFicheiros.Name = "btnFicheiros";
             this.btnFicheiros.Size = new System.Drawing.Size(179, 54);
@@ -111,10 +112,10 @@ namespace Cliente
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnChat);
-            this.groupBox1.Location = new System.Drawing.Point(428, 106);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(457, 174);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(220, 85);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
@@ -123,10 +124,10 @@ namespace Cliente
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btnFicheiros);
-            this.groupBox2.Location = new System.Drawing.Point(428, 198);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Location = new System.Drawing.Point(457, 266);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(220, 85);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
@@ -136,10 +137,10 @@ namespace Cliente
             // 
             this.groupBox3.Controls.Add(this.btnConectar);
             this.groupBox3.Controls.Add(this.btnDesconectar);
-            this.groupBox3.Location = new System.Drawing.Point(5, 106);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Location = new System.Drawing.Point(34, 174);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(215, 177);
             this.groupBox3.TabIndex = 11;
             this.groupBox3.TabStop = false;
@@ -149,7 +150,7 @@ namespace Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(673, 297);
+            this.ClientSize = new System.Drawing.Size(718, 386);
             this.Controls.Add(this.lbStatus);
             this.Controls.Add(this.lbMenu);
             this.Controls.Add(this.groupBox1);

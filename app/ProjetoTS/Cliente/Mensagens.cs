@@ -56,15 +56,8 @@ namespace Cliente
             }
         }
 
-        private void Mensagens_Load(object sender, EventArgs e)
-        {
+     
 
-        }
-
-        private void btnCriptoMSG_Click(object sender, EventArgs e)
-        {
-            CriptoMSG criptoMSG = new CriptoMSG();
-            criptoMSG.Show();
-        }
+    
     }
 }

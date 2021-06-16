@@ -14,11 +14,8 @@ namespace Cliente
        
         public static CspParameters cspp;
         public static RSACryptoServiceProvider rsa;
-        AesCryptoServiceProvider aesCrypt;
         private static string _encrFolder;
-        CriptoMSG cripto { get; set; }
-        public byte[] key;
-        public byte[] iv;
+      
 
         public static string EncrFolder
 

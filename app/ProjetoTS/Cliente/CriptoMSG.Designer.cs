@@ -165,10 +165,10 @@ namespace Cliente
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(494, 86);
+            this.button1.Location = new System.Drawing.Point(494, 85);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(185, 70);
+            this.button1.Size = new System.Drawing.Size(185, 65);
             this.button1.TabIndex = 17;
             this.button1.Text = "GERAR CHAVE SIMÉTRICA";
             this.button1.UseVisualStyleBackColor = true;

@@ -123,3 +123,6 @@ C:\Users\jpval\Dropbox\PSI\2º_SEMESTRE\PROJETOS\PSI_TS_PL\app\ProjetoTS\Cliente
 C:\Users\jpval\Dropbox\PSI\2º_SEMESTRE\PROJETOS\PSI_TS_PL\app\ProjetoTS\Cliente\obj\Debug\Cliente.csproj.CopyComplete
 C:\Users\jpval\Dropbox\PSI\2º_SEMESTRE\PROJETOS\PSI_TS_PL\app\ProjetoTS\Cliente\obj\Debug\Cliente.exe
 C:\Users\jpval\Dropbox\PSI\2º_SEMESTRE\PROJETOS\PSI_TS_PL\app\ProjetoTS\Cliente\obj\Debug\Cliente.pdb
+C:\Users\jpval\Dropbox\PSI\2º_SEMESTRE\PROJETOS\PSI_TS_PL\app\ProjetoTS\Cliente\bin\Debug\Users_DB.mdf
+C:\Users\jpval\Dropbox\PSI\2º_SEMESTRE\PROJETOS\PSI_TS_PL\app\ProjetoTS\Cliente\bin\Debug\Users_DB_log.ldf
+C:\Users\jpval\Dropbox\PSI\2º_SEMESTRE\PROJETOS\PSI_TS_PL\app\ProjetoTS\Cliente\obj\Debug\Cliente.Chat.resources
