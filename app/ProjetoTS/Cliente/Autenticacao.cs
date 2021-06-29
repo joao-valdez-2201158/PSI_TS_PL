@@ -151,8 +151,6 @@ namespace Cliente
             }
             
                 return true;
-          
-           
 
         }
 

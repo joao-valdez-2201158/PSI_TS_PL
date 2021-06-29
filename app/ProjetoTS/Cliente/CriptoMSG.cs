@@ -158,6 +158,11 @@ namespace Cliente
             //COLOCAR O TEXTO CIFRADO NA TEXTBOX TextoCifrado
             tb_TextoDecifrado.Text = textoDecifrado;
         }
+
+        private void CriptoMSG_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

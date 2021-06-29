@@ -36,5 +36,10 @@ namespace Cliente
             CriptoMSG cripto = new CriptoMSG();
             cripto.Show();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

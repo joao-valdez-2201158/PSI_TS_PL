@@ -203,6 +203,7 @@ namespace Cliente
             this.Controls.Add(this.tb_SegredoPartilhado);
             this.Name = "CriptoMSG";
             this.Text = "CriptoMSG";
+            this.Load += new System.EventHandler(this.CriptoMSG_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

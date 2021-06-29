@@ -118,6 +118,11 @@ namespace Cliente
             label1.ForeColor = Color.DarkBlue;
             label1.Text = Criptografia.GetPrivateKey();
         }
+
+        private void CriptoFile_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

@@ -150,7 +150,7 @@ namespace Cliente
             this.lbCriptoTittle.Text = "Criptografia";
             this.lbCriptoTittle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Cripto
+            // CriptoFile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -164,8 +164,9 @@ namespace Cliente
             this.Controls.Add(this.btnDecryptFile);
             this.Controls.Add(this.btnEncryptFile);
             this.Controls.Add(this.label1);
-            this.Name = "Cripto";
+            this.Name = "CriptoFile";
             this.Text = "Cripto";
+            this.Load += new System.EventHandler(this.CriptoFile_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
